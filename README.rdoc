@@ -12,7 +12,7 @@ of specifying actions: get, put, post, delete.
   require 'rest_client'
 
   RestClient.get 'http://example.com/resource'
-  
+
   RestClient.get 'http://example.com/resource', {:params => {:id => 50, 'foo' => 'bar'}}
 
   RestClient.get 'https://user:password@example.com/private/resource', {:accept => :json}

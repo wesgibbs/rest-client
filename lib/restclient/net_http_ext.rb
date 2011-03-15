@@ -2,7 +2,7 @@
 # Replace the request method in Net::HTTP to sniff the body type
 # and set the stream if appropriate
 #
-# Taken from:	
+# Taken from:
 # http://www.missiondata.com/blog/ruby/29/streaming-data-to-s3-with-ruby/
 
 module Net

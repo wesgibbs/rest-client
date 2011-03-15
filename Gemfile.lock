@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wgibbs-rest-client (1.6.1)
+    wgibbs-rest-client (1.6.2)
       mime-types (~> 1.16.0)
 
 GEM
