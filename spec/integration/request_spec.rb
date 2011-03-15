@@ -1,4 +1,4 @@
-require File.join( File.dirname(File.expand_path(__FILE__)), '../base')
+require 'spec_helper'
 
 describe RestClient::Request do
   describe "ssl verification" do
