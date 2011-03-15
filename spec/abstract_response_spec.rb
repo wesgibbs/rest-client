@@ -47,8 +47,8 @@ describe RestClient::AbstractResponse do
   end
 
   it "extracts cookies from response headers" do
-    @net_http_res.should_receive(:to_hash).and_return('set-cookie' => ['session_id=1; path=/'])
-    @response.cookies.should == { 'session_id' => '1' }
+    @net_http_res.should_receive(:to_hash).and_return('set-cookie' => ['session_id=1; path=/', 'user_credentials=2; path=/; domain=example.com'])
+    @response.cookies.should == { 'session_id' => '1', 'user_credentials' => '2' }
   end
 
   it "extract strange cookies" do
